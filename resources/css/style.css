@@ -6,15 +6,24 @@
 }
 
 @font-face {
-    font-family: 'Kaleko 205 Round';
-    src: url('../fonts/Kaleko205Round-Bold.ttf') format('truetype'),
-         url('../fonts/Kaleko205Round-Light.ttf') format('truetype'),
-         url('../fonts/Kaleko205Round-Thin.ttf') format('truetype')
-  }
+    font-family: 'Kaleko 205 Round Bold';
+    src: url('../fonts/Kaleko205Round-Bold.ttf') format('truetype');       
+}
+
+@font-face {
+    font-family: 'Kaleko 205 Round Light';
+    src: url('../fonts/Kaleko205Round-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kaleko 205 Round Thin';
+    src: url('../fonts/Kaleko205Round-Thin.ttf') format('truetype');
+}
 
 body {
     background-color: black;
-    font-family: 'Kaleko 205 Round';
+    font-family: 'Kaleko 205 Round Light';
+    /* font-weight: thin; */
     font-size: 10px;
 }
 
