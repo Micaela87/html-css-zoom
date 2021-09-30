@@ -24,6 +24,7 @@ body {
     background-color: black;
     font-family: 'Kaleko 205 Round Light';
     font-size: 10px;
+    color: white;
 }
 
 /* container */
@@ -33,7 +34,6 @@ body {
 }
 
 .speaker {
-    color: white;
     text-align: right;
     font-size: 1.2em;
 }
@@ -54,6 +54,32 @@ body {
     margin-right: 7%;
 }
 
+/* flex-container */
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+/* page */
+.page {
+    text-align: center;
+    width: 12.5%;
+}
+
+.arrow {
+    display: block;
+    font-size: 3.5em;
+    padding: 1% 0;
+}
+
+.page span {
+    font-size: 1.2em;
+}
+
+.fa-caret-right {
+    color: #2ebaff;
+}
+
 /* grid rules */
 #grid {
     display: grid;
@@ -68,6 +94,7 @@ body {
 }
 
 .item {
+    position: relative;
     /* debugging */
     background-color: cornsilk;
 }
@@ -75,6 +102,19 @@ body {
 .item img {
     width: 100%;
     height: 100%;
+}
+
+.item span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+    width: 50%;
+}
+
+.fa-microphone-slash {
+    margin-right: 5%;
 }
 
 /* toolbar */
