@@ -25,12 +25,13 @@ body {
     font-family: 'Kaleko 205 Round Light';
     font-size: 10px;
     color: white;
+    font-weight: 1000;
 }
 
 /* container */
 .container {
     width: 100%;
-    height: calc(100vh - 100px);
+
 }
 
 .speaker {
@@ -43,10 +44,10 @@ body {
     padding: 0.5% 1%;
     border-radius: 4px;
     background-image: linear-gradient(#373737, black);
+    white-space: nowrap;
 }
 
 #speaker-view {
-    width: 9%;
     margin-right: 0.5%;
 }
 
@@ -80,13 +81,18 @@ body {
     color: #2ebaff;
 }
 
+.grid-container {
+    overflow-y: auto;
+    height: calc(100vh - 129px);
+}
+
 /* grid rules */
 #grid {
     display: grid;
     grid-template: repeat(5, auto) / repeat(5, 20%);
     gap: 5px;
     width: 75%;
-    height: 80%;
+    height: 100%;
     margin: 0 auto;
     padding: 0.5% 0;
     /* debugging */
@@ -109,8 +115,8 @@ body {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1%;
-    width: 50%;
+    padding: 1% 5%;
+    white-space: nowrap;
 }
 
 .fa-microphone-slash {
@@ -121,14 +127,52 @@ body {
 #toolbar {
     height: 100px;
     background-color: #1e2022;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.controls {
+.side, .center {
+    justify-content: space-evenly;
     /* debugging */
-    width: 30%;
+    /* width: 30%; */
     height: 80%;
     background-color: crimson;
+    border: 1px solid black;
+}
+
+.side {
+    width: 15%;
+}
+
+.center {
+    width: 50%;
+}
+
+.side div:not(.arrow-menu) {
+    text-align: center;
+    width: 60%;
+}
+
+.center div:not(.arrow-menu) {
+    text-align: center;
+    width: 70%;
+}
+
+.side span, .center span {
+    display: block;
+    font-family: 'Kaleko 205 Round Thin';
+    font-size: 1.2em;
+    padding: 1%;
+    white-space: nowrap;
+}
+
+.menu {
+    justify-content: center;
+}
+
+.side .icon, .center .icon {
+    font-size: 3em;
+}
+
+.fa-angle-up {
+    display: inline-block;
 }
