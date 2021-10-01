@@ -83,7 +83,7 @@ body {
 
 .grid-container {
     overflow-y: auto;
-    height: calc(100vh - 129px);
+    height: calc(100vh - 99px);
 }
 
 /* grid rules */
@@ -92,8 +92,8 @@ body {
     grid-template: repeat(5, auto) / repeat(5, 20%);
     gap: 5px;
     width: 75%;
-    height: 100%;
-    margin: 0 auto;
+    height: 90%;
+    margin: 2% auto;
     padding: 0.5% 0;
     /* debugging */
     background-color: black;
@@ -125,36 +125,36 @@ body {
 
 /* toolbar */
 #toolbar {
-    height: 100px;
+    height: 70px;
     background-color: #1e2022;
     justify-content: space-between;
 }
 
-.side, .center {
+.center {
     justify-content: space-evenly;
     /* debugging */
     /* width: 30%; */
-    height: 80%;
-    background-color: crimson;
-    border: 1px solid black;
+    height: 100%;
+    /* background-color: crimson;
+    border: 1px solid black; */
 }
 
 .side {
-    width: 15%;
+    height: 100%;
 }
 
-.center {
+/* .center {
     width: 50%;
-}
+} */
 
 .side div:not(.arrow-menu) {
     text-align: center;
-    width: 60%;
+    padding: 0 10%;
 }
 
 .center div:not(.arrow-menu) {
     text-align: center;
-    width: 70%;
+    padding: 0 3%;
 }
 
 .side span, .center span {
@@ -165,14 +165,12 @@ body {
     white-space: nowrap;
 }
 
-.menu {
-    justify-content: center;
-}
-
 .side .icon, .center .icon {
-    font-size: 3em;
+    font-size: 2em;
 }
 
-.fa-angle-up {
-    display: inline-block;
+#end-meeting {
+    background-color: #484a4b;
+    color: #dc524b;
+    padding: 28px 28px;
 }
